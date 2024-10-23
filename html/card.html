@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.metric {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  width: calc(25% - 40px);
+}
+
+.metric i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 16px;
+  color: #666;
+}
+
+.change {
+  font-size: 14px;
+  color: #999;
+}
+
+.change i {
+  font-size: 12px;
+  margin-left: 5px;
+  color: #4CAF50;
+}
+
+.fa-arrow-up {
+  transform: rotate(45deg);
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="metric">
+          <i class="fas fa-eye"></i>
+          <div class="value">8,652</div>
+          <div class="label">Daily Visits</div>
+          <div class="change">2.97% <i class="fas fa-arrow-up"></i></div>
+        </div>
+        <div class="metric">
+          <i class="fas fa-dollar-sign"></i>
+          <div class="value">$9,254.62</div>
+          <div class="label">Revenue</div>
+          <div class="change">18.25% <i class="fas fa-arrow-up"></i></div>
+        </div>
+        <div class="metric">
+          <i class="fas fa-shopping-cart"></i>
+          <div class="value">753</div>
+          <div class="label">Orders</div>
+          <div class="change">3.75% <i class="fas fa-arrow-up"></i></div>
+        </div>
+        <div class="metric">
+          <i class="fas fa-users"></i>
+          <div class="value">63,154</div>
+          <div class="label">Users</div>
+          <div class="change">21% <i class="fas fa-arrow-up"></i></div>
+        </div>
+      </div>
+</body>
+</html>
+
+
+
+
+
+<!-- TESTE DE CADS-->
+
+<div class="dashboard">
+    <div class="metric">
+      <i class="fas fa-eye"></i>
+      <div class="value"><?php echo ($totalSacasRecebidas - $totalSacasEnviadas); ?> sacas</div>
+      <div class="label"> SALDO TOTAL </div>
+      <div class="change">2.97% <i class="fas fa-arrow-up"></i></div>
+    </div>
+    <div class="metric">
+      <i class="fas fa-dollar-sign"></i>
+      <div class="value">$9,254.62</div>
+      <div class="label">Revenue</div>
+      <div class="change">18.25% <i class="fas fa-arrow-up"></i></div>
+    </div>
+    <div class="metric">
+      <i class="fas fa-shopping-cart"></i>
+      <div class="value"><?php echo ($totalPesoRecebido - $totalPesoEnviado); ?> kg</div>
+      <div class="label">Orders</div>
+      <div class="change">3.75% <i class="fas fa-arrow-up"></i></div>
+    </div>
+    <div class="metric">
+      <i class="fas fa-users"></i>
+      <div class="value">63,154</div>
+      <div class="label">U21% <i class="fas fa-arrow-up"></i></div>
+    </div></div>
+      <div class="change">
+  </div>
+
+<!-- TESTE DE CADS-->
